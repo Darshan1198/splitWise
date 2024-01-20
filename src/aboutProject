@@ -1,0 +1,82 @@
+Design  Splitwise  1St  lect :
+Requirement gathering
+Class diagram
+schema  design
+
+
+ Overview:
+ 1)Align with the interviewer
+         a) Splitwise  is an  expense tracker
+         b) User logs expense with other user
+         c) Helps with settlements
+
+ 2)what kind of app
+        a)how  will you test my design  (API )
+        b) persistence required  ?
+
+ Requirement Gathering
+ 1: Sketch
+
+2; user Journey
+
+clarify Requirements
+1) is expenses paid by a single user as multiple users can pay
+  A  B  C D  ( 10000)
+
+  expense
+  travel gift or xyz                           |26/12/2021
+    Amount  = 10k                             |
+    paid By = A(5k) + B(5k)                    |
+    Shared b= A(1K) B(1K) C(4K) D(4K)          |
+
+2) is the  expense  shared  equally? not necessary!
+
+3) SHould an expense  in group always  involve all member? No
+   roommates  4 members( A B C D)    A B C went dinner  yesterday why to add D
+
+4) can an expense be added that doesn't belong to a group? NO
+
+5) what is settling the  group ?
+ RH -> A B CD
+ Office  _> B C D
+
+  A List of transaction  if followed would make everyones share  in the  group expense to 0
+
+
+
+
+
+
+
+
+
+
+lect 2:
+MOdels
+schema  design
+Data
+AlgorithM
+
+class  diagram:
+Users can register and update their profiles
+
+ 1.User
+ 2.Group
+
+
+
+
+Activity selection  greedy ALGO
+                |
+                |
+               / \
+Round  RObin  and greedy Algorithm
+
+
+
+
+lect 3:
+
+command design pattern
+API Annotation
+One data flow end to end
